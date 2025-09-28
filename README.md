@@ -29,7 +29,17 @@ As part of the course, DATA 5100, I have been asked to investigate the relative 
 
 ## Data
 
-- **Source:** NOAA website
+- **Source:** NOAA website: https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND.
+- Steps used to download the FREE data:
+  1. Set Observation Type to Daily Summaries
+  2. Change the date range to 2018-01-01 to 2022-12-31
+  3. Search for city of interest, in this case Seattle and Hilo and click search
+  4. A map will be presented. Zoom in to pick one station of interest.
+  5. Click Add to cart and go to cart. Do NOT be misled. The data is free
+  6. Select the Output Format as Custom GHCN-Daily CSV. Check that the Data Range is 2018-01-01 to 2022-12-31. Click CONTINUE.
+  7. Select Precipitation as a custom output for data. Continue
+  8. Enter email. Receive data and download
+
 - **Description:** The raw csv file will feature more columns than are of interest. The columns of interest are: STATION_NAME, DATE, and PRCP. STATION_NAME is the name of the station (usually city/airport name). DATE is formatted as a string where the year of the record (4 digits) followed by month (2 digits) and day (2 digits). PRCP = Precipitation (mm or inches as per user preference, I used inches)
 - **License:** (if applicable)
 
