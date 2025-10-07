@@ -1,13 +1,17 @@
 ## Comparing Rainfall in Seattle and Hilo
-> A brief description of what the project does and its purpose.
 This code compares the rainfall in two different cities: Seattle, Washington and Hilo, Hawaii
 ---
 
 ## Project Overview
 
-Provide a short and concise overview of the project. Mention the problem it solves, the data used, and the key outcomes or findings.
+As part of the course, DATA 5100, I have been asked to investigate the relative rainfall in Seattle and a city of my choosing (Hilo, Hawaii) to determine which has more rainfall, ostensibly to win an argument with parental figures that it does **NOT** rain too much in Seattle. I will be using data collected by NOAA from the years: January 1, 2018 to December 31, 2022. Relative rainfall was assessed on these axes: 
+    Maximum amount of rain in a given day
+    Higher overall volume of rainfall in a given timeframe
+    Higher average amount of rain in a given timeframe
+    More days of rain across a given timeframe (2018-2022 in our case), and fewer days with 0 rain
+Overwhelmingly, Hilo received more rain across each of these dimensions.
 
-As part of the course, DATA 5100, I have been asked to investigate the relative rainfall in Seattle and a city of my choosing (Hilo, Hawaii) to determine which has more rainfall, ostensibly to win an argument with parental figures that it does **NOT** rain too much in Seattle. I will be using data collected by NOAA from the years: January 1, 2018 to December 31, 2022. Once I have completed the analysis I will discover:
+
 
 - **Objective:** I am investigating whether it rains more in Seattle, WA or Hilo, Hawaii.
 - **Domain:** Natural Science
@@ -40,20 +44,29 @@ As part of the course, DATA 5100, I have been asked to investigate the relative 
   7. Select Precipitation as a custom output for data. Continue
   8. Enter email. Receive data and download
 
-- **Description:** The raw csv file will feature more columns than are of interest. The columns of interest are: STATION_NAME, DATE, and PRCP. STATION_NAME is the name of the station (usually city/airport name). DATE is formatted as a string where the year of the record (4 digits) followed by month (2 digits) and day (2 digits). PRCP = Precipitation (mm or inches as per user preference, I used inches)
-- **License:** (if applicable)
+- **Description:** The raw csv file will feature more columns than are of interest. The columns of interest are: STATION_NAME, DATE, and PRCP. STATION_NAME is the name of the station (usually city/airport name). DATE is formatted as a string where the year of the record (4 digits) followed by month (2 digits) and day (2 digits). These will later be standardized with Python dateTime library. PRCP = Precipitation (mm or inches as per user preference, I used inches)
 
 ---
 
 ## Analysis
 
-Describe the notebooks and/or scripts used to perform the analysis. Specify the order in which the code should be run to reproduce the results.
+For each notebook, simply run every cell in the order they are presented.
+To clean the data first run the notebook titled: Seattle_Hilo_Weather
+	- the code will output a cleaned csv. Move the csv into  the data folder, else the analysis notebook will not know where to find the data
+Then, to analyze the data run the notebook: Analysis_Seattle_Hilo_Weather
 
 ---
 
 ## Results
 
-Include a short discussion of the findings and what they imply.
+In order to assess rainfall in Seattle vs Hilo I asked these questions:
+- What is the maximum amount of rain on any one given day? 
+- Which city has the overall greater volume of rainfall in a given timeframe (monthly and yearly)? 
+- Which city has the higher average amount of rain in a given timeframe (monthly, yearly)? 
+- And which city has fewer days of 0 rain?
+
+Overwhelmingly, Hilo was found to experience more rain than Seattle. The maximum amount of rained received in one day was 15in in Hilo compared to 2.6 in Seattle. Hilo received almost twice the amount of rain Seattle did every year, and the receives more rain monthly as well. Hilo rains 80% of the time compared to Seattle's barely over 50%. Hilo is the undisputed rain champion.
+
 
 ---
 
@@ -65,12 +78,10 @@ Include a short discussion of the findings and what they imply.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ---
 
 ## Acknowledgements
 
-- Tools/libraries used
-- Tutorials or papers referenced
-- Inspiration or collaborators
+- libraries: pandas, numpy, maptplotlib, seaborns, scipy
+- I followed data cleaning and exploration tutorials provided by Dr. Brian Fischer for his DATA 5100 FQ 2025 class. 
+	[https://github.com/brian-fischer]
