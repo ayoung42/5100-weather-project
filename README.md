@@ -83,6 +83,7 @@ Overwhelmingly, Hilo was found to experience more rain than Seattle. The maximum
 ---
 
 ## License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
 
