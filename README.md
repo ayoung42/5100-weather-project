@@ -1,21 +1,24 @@
 ## Comparing Rainfall in Seattle and Hilo
-This code compares the rainfall in two different cities: Seattle, Washington and Hilo, Hawaii
+
+>This code compares the rainfall in two different cities: Seattle, Washington and Hilo, Hawaii
 ---
 
 ## Project Overview
 
 As part of the course, DATA 5100, I have been asked to investigate the relative rainfall in Seattle and a city of my choosing (Hilo, Hawaii) to determine which has more rainfall, ostensibly to win an argument with parental figures that it does **NOT** rain too much in Seattle. I will be using data collected by NOAA from the years: January 1, 2018 to December 31, 2022. Relative rainfall was assessed on these axes: 
-    Maximum amount of rain in a given day
-    Higher overall volume of rainfall in a given timeframe
-    Higher average amount of rain in a given timeframe
-    More days of rain across a given timeframe (2018-2022 in our case), and fewer days with 0 rain
+- Maximum amount of rain in a given day
+- Higher overall volume of rainfall in a given timeframe
+- Higher average amount of rain in a given timeframe
+- More days of rain across a given timeframe (2018-2022 in our case), and fewer days with 0 rain
 Overwhelmingly, Hilo received more rain across each of these dimensions.
 
 
 
-- **Objective:** I am investigating whether it rains more in Seattle, WA or Hilo, Hawaii.
-- **Domain:** Natural Science
-- **Key Techniques:** Comparative Statistics, and Visualization. 
+**Objective:** I am investigating whether it rains more in Seattle, WA or Hilo, Hawaii.
+
+**Domain:** Natural Science
+
+**Key Techniques:** Comparative Statistics, and Visualization. 
 
 ---
 
@@ -51,8 +54,11 @@ Overwhelmingly, Hilo received more rain across each of these dimensions.
 ## Analysis
 
 For each notebook, simply run every cell in the order they are presented.
+
 To clean the data first run the notebook titled: Seattle_Hilo_Weather
-	- the code will output a cleaned csv. Move the csv into  the data folder, else the analysis notebook will not know where to find the data
+
+- the code will output a cleaned csv. Move the csv into  the data folder, else the analysis notebook will not know where to find the data
+	
 Then, to analyze the data run the notebook: Analysis_Seattle_Hilo_Weather
 
 ---
